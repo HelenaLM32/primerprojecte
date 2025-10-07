@@ -1,0 +1,148 @@
+<!-- ERROR 1: DOCTYPE mal escrito -->
+<!DOCTYP html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- ERROR 2: coma extra en viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,," />
+    <meta name="description" content="Catálogo de productos - Encuentra lo que necesitas al mejor precio." />
+    <title>Catálogo de Productos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Header -->
+    <header class="bg-indigo-600 text-white py-6 text-center shadow">
+        <h1 class="text-3xl font-bold">Catálogo de Productos</h1>
+        <p class="mt-1 text-lg">Explora nuestra selección de productos disponibles</p>
+    </header>
+
+    <!-- Main Catalog -->
+    <!-- ERROR 5 (parte A): id que se duplicará -->
+    <main class="max-w-7xl mx-auto p-6">
+        <div id="grid" class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <!-- Producto 1 -->
+            <div class="bg-white rounded shadow hover:shadow-lg transition p-4 flex flex-col">
+                <!-- ERROR 3: alt sin comillas -->
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1077/10777887/158-apple-iphone-15-pro-max-256gb-titanio-azul-libre.jg" alt=iPhone 15 Pro Max class="rounded mb-4">
+                <h2 class="text-lg font-semibold mb-1">iPhone 15 Pro Max</h2>
+                <p class="text-sm text-gray-600 mb-2">Pantalla de 6,7″, chip A17 Pro, cámara triple de 48 MP, Dynamic Island.</p>
+                <span class="text-green-600 font-bold text-xl mb-4">Desde 1.199€</span>
+                <button class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded">Ver más</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <!-- ERROR 4: etiqueta de cierre mal escrita en el boton -->
+            <div class="bg-white rounded shadow hover:shadow-lg transition p-4 flex flex-col">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1087/10876590/1240-replay-iphone-15-pro-128gb-titanio-azul-libre-refurbished.jpg" alt="iPhone 15 Pro" class="rounded mb-4">
+                <h2 class="text-lg font-semibold mb-1">iPhone 15 Pro</h2>
+                <p class="text-sm text-gray-600 mb-2">Pantalla de 6,1″, chip A17 Pro, cámara triple de 48 MP, Dynamic Island.</p>
+                <span class="text-green-600 font-bold text-xl mb-4">Desde 1.099€</span>
+                <buton class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded">Ver más</buton>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="bg-white rounded shadow hover:shadow-lg transition p-4 flex flex-col">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1077/10777740/1262-apple-iphone-15-256gb-negro-libre-03069a78-d34f-4da3-9a50-92cac5712289.jpg" alt="iPhone 15" class="rounded mb-4">
+                <h2 class="text-lg font-semibold mb-1">iPhone 15</h2>
+                <p class="text-sm text-gray-600 mb-2">Pantalla de 6,1″, chip A16 Bionic, cámara dual de 48 MP.</p>
+                <span class="text-green-600 font-bold text-xl mb-4">Desde 799€</span>
+                <button class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded">Ver más</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="bg-white rounded shadow hover:shadow-lg transition p-4 flex flex-col">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1077/10777797/1941-apple-iphone-15-plus-128gb-azul-libre.jpg" alt="iPhone 15 Plus" class="rounded mb-4">
+                <h2 class="text-lg font-semibold mb-1">iPhone 15 Plus</h2>
+                <p class="text-sm text-gray-600 mb-2">Pantalla de 6,7″, chip A16 Bionic, cámara dual de 48 MP.</p>
+                <span class="text-green-600 font-bold text-xl mb-4">Desde 899€</span>
+                <button class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded">Ver más</button>
+            </div>
+
+
+            <!-- Producto 5 -->
+            <div class="bg-white rounded shadow hover:shadow-lg transition p-4 flex flex-col">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1058/10581320/1141-apple-iphone-14-pro-max-256gb-morado-oscuro-libre.jpg" alt="iPhone 14 Pro Max" class="rounded mb-4">
+                <h2 class="text-lg font-semibold mb-1">iPhone 14 Pro Max</h2>
+                <p class="text-sm text-gray-600 mb-2">Pantalla de 6,7″, chip A16 Bionic, cámara triple de 48 MP, Dynamic Island.</p>
+                <span class="text-green-600 font-bold text-xl mb-4">Desde 1.099€</span>
+                <button class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded">Ver más</button>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="bg-white rounded shadow hover:shadow-lg transition p-4 flex flex-col">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1093/10935185/1790-replay-apple-iphone-14-pro-128gb-plata-espacial-libre-refurbished.jpg" alt="iPhone 14 Pro" class="rounded mb-4">
+                <h2 class="text-lg font-semibold mb-1">iPhone 14 Pro</h2>
+                <p class="text-sm text-gray-600 mb-2">Pantalla de 6,1″, chip A16 Bionic, cámara triple de 48 MP, Dynamic Island.</p>
+                <span class="text-green-600 font-bold text-xl mb-4">Desde 999€</span>
+                <button class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded">Ver más</button>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="bg-white rounded shadow hover:shadow-lg transition p-4 flex flex-col">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1058/10581405/1111-apple-iphone-14-128gb-productred-libre.jpg" alt="iPhone 14" class="rounded mb-4">
+                <h2 class="text-lg font-semibold mb-1">iPhone 14</h2>
+                <p class="text-sm text-gray-600 mb-2">Pantalla de 6,1″, chip A15 Bionic, cámara dual de 12 MP.</p>
+                <span class="text-green-600 font-bold text-xl mb-4">Desde 699€</span>
+                <button class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded">Ver más</button>
+            </div>
+
+            <!-- Producto 8 -->
+            <div class="bg-white rounded shadow hover:shadow-lg transition p-4 flex flex-col">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1067/10673979/1412-apple-iphone-14-plus-256gb-amarillo-libre-e76360f7-639c-46f7-9470-438e3c01053f.jpg" alt="iPhone 14 Plus" class="rounded mb-4">
+                <h2 class="text-lg font-semibold mb-1">iPhone 14 Plus</h2>
+                <p class="text-sm text-gray-600 mb-2">Pantalla de 6,7″, chip A15 Bionic, cámara dual de 12 MP.</p>
+                <span class="text-green-600 font-bold text-xl mb-4">Desde 799€</span>
+                <button class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded">Ver más</button>
+            </div>
+
+            <!-- Producto 9 -->
+            <div class="bg-white rounded shadow hover:shadow-lg transition p-4 flex flex-col">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1019/10191385/1528-apple-iphone-se-2022-128gb-product-red-libre.jpg" alt="iPhone SE 2022" class="rounded mb-4">
+                <h2 class="text-lg font-semibold mb-1">iPhone SE 2022</h2>
+                <p class="text-sm text-gray-600 mb-2">Pantalla de 4,7″, chip A15 Bionic, cámara de 12 MP.</p>
+                <span class="text-green-600 font-bold text-xl mb-4">Desde 429€</span>
+                <button class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded">Ver más</button>
+            </div>
+
+            <!-- Producto 10 -->
+            <div class="bg-white rounded shadow hover:shadow-lg transition p-4 flex flex-col">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1087/10873587/1479-replay-iphone-13-128gb-blanco-refurbished.jpg" alt="iPhone 13" class="rounded mb-4">
+                <h2 class="text-lg font-semibold mb-1">iPhone 13</h2>
+                <p class="text-sm text-gray-600 mb-2">Pantalla de 6,1″, chip A15 Bionic, cámara dual de 12 MP.</p>
+                <span class="text-green-600 font-bold text-xl mb-4">Desde 599€</span>
+                <button class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded">Ver más</button>
+            </div>
+
+            <!-- Producto 11 -->
+            <div class="bg-white rounded shadow hover:shadow-lg transition p-4 flex flex-col">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1019/10191371/1902-apple-iphone-13-mini-256gb-verde-alpino-libre.jpg" alt="iPhone 13 Mini" class="rounded mb-4">
+                <h2 class="text-lg font-semibold mb-1">iPhone 13 Mini</h2>
+                <p class="text-sm text-gray-600 mb-2">Pantalla de 5,4″, chip A15 Bionic, cámara dual de 12 MP.</p>
+                <span class="text-green-600 font-bold text-xl mb-4">Desde 529€</span>
+                <button class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded">Ver más</button>
+            </div>
+
+            <!-- Producto 12 -->
+            <div class="bg-white rounded shadow hover:shadow-lg transition p-4 flex flex-col">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1086/10869665/1656-replay-iphone-13-pro-256gb-azul-sierra-refurbished-comprar.jpg" alt="iPhone 13 Pro" class="rounded mb-4">
+                <h2 class="text-lg font-semibold mb-1">iPhone 13 Pro</h2>
+                <p class="text-sm text-gray-600 mb-2">Pantalla de 6,1″, chip A15 Bionic, cámara triple de 12 MP.</p>
+                <span class="text-green-600 font-bold text-xl mb-4">Desde 899€</span>
+                <button class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded">Ver más</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <!-- ERROR 5 (parte B): id duplicado con el contenedor -->
+    <footer id="grid" class="bg-gray-200 text-center py-4 mt-10 text-sm text-gray-600">
+        &copy; 2025 Catálogo de Productos. Todos los derechos reservados.
+    </footer>
+
+</body>
+
+</html>
